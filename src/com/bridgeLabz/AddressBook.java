@@ -26,8 +26,16 @@ public class AddressBook {
         String email = scanner.next();
         Contact contact = new Contact(firstName,lastName,address, city, state, pin, phoneNumber, email );
         list.add(contact);
+    }
+    public void editContact(){
+        System.out.println("Please Enter the name first to edit :-");
+        String editName = scanner.next();
+        for(Contact contact:list){
+            if(contact.getFirstName().equals(contact.getFirstName())){
+                contact.editExistingContact();
+            }
 
-
+        }
 
     }
 }
