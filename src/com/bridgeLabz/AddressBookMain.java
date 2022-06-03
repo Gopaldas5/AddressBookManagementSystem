@@ -5,6 +5,7 @@ public class AddressBookMain {
         System.out.println("Welcome to Address Book Management System");
         AddressBook addressBook = new AddressBook();
         addressBook.addNewContact();
+        addressBook.addNewContact();
         System.out.println(addressBook.list);
         System.out.println("Editing the contact");
         addressBook.editContact();
