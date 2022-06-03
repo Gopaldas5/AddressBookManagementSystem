@@ -1,5 +1,7 @@
 package com.bridgeLabz;
 
+import static com.bridgeLabz.AddressBook.scanner;
+
 public class Contact {
     private String firstName;
     private String lastname;
@@ -101,5 +103,24 @@ public class Contact {
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+    public void editExistingContact(){
+
+        System.out.println("Enter the First Name:- ");
+        firstName = scanner.next();
+        System.out.println("Enter the Last Name:- ");
+        lastname = scanner.next();
+        System.out.println("Enter the Address :- ");
+        address = scanner.next();
+        System.out.println("Enter the Name of city:- ");
+        city = scanner.next();
+        System.out.println("Enter the Name of State:- ");
+        state = scanner.next();
+        System.out.println("Enter the pin code:- ");
+        pin = scanner.next();
+        System.out.println("Enter the phone number:- ");
+        phoneNumber = scanner.next();
+        System.out.println("Enter the Email:-");
+        email = scanner.next();
     }
 }
