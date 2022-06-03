@@ -34,8 +34,15 @@ public class AddressBook {
             if(contact.getFirstName().equals(contact.getFirstName())){
                 contact.editExistingContact();
             }
-
         }
-
+    }
+    public void deleteContact(){
+        System.out.println("Enter the name first to delete:-");
+        String deleteName = scanner.next();
+        for(Contact contact:list){
+            if(contact.getFirstName().equals(deleteName)){
+                contact.deleteExistingContact();
+            }
+        }
     }
 }

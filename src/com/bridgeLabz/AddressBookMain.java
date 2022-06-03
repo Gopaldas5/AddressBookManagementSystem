@@ -9,5 +9,7 @@ public class AddressBookMain {
         System.out.println("Editing the contact");
         addressBook.editContact();
         System.out.println(addressBook.list);
+        addressBook.deleteContact();
+        System.out.println(addressBook.list);
     }
 }
