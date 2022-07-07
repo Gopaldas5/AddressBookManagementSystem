@@ -11,7 +11,12 @@ public class AddressBook {
         int option;
         boolean check = false;
         do {
-            System.out.println("press\n1. To add contact\n2.To display contact\n3.To edit\4. To delete");
+            System.out.println("1. To add contact")
+            System.out.println("2. To display contact");
+            System.out.println("3. To edit");
+            System.out.println("4. To delete");
+            System.out.println("5. To Exit");
+            System.out.print("Enter your choice : ");
             option = scanner.nextInt();
             scanner.nextInt();
             switch (option) {
