@@ -56,7 +56,8 @@ public void addNewContact(){
         list.add(contact);
     }
     public void diplayContact(){
-
+        System.out.println("Displaying the Contact list");
+        System.out.println(list);
     }
     public void editContact(){
         System.out.println("Please Enter the name first to edit :-");
